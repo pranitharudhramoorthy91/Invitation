@@ -2,89 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Menyaazhini's 1st Birthday</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 You're Invited! 🎂</title>
     <style>
         body {
-            font-family: 'Comic Sans MS', cursive;
-            background: #fdeef4;
-            margin: 0;
-            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #333;
             text-align: center;
+            padding: 40px 20px;
+            margin: 0;
         }
-
-        .container {
+        .card {
             max-width: 600px;
-            margin: auto;
+            margin: 0 auto;
             background: white;
-            padding: 25px;
             border-radius: 20px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-            margin-top: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            padding: 40px 20px;
         }
-
         h1 {
-            color: #d47fa6;
-            font-size: 36px;
+            font-size: 3rem;
+            color: #e91e63;
+            margin: 0;
         }
-
         h2 {
-            color: #b56576;
+            color: #ff5722;
         }
-
-        .cute-img {
-            width: 120px;
-            margin: 10px;
-        }
-
-        .divider {
-            margin: 20px auto;
-            height: 2px;
-            width: 80%;
-            background: #ffc7dd;
-        }
-
         .details {
-            font-size: 18px;
-            color: #444;
-            line-height: 1.7;
+            font-size: 1.4rem;
+            margin: 30px 0;
+            line-height: 1.6;
         }
-
-        .footer {
+        .emoji {
+            font-size: 4rem;
+            animation: bounce 2s infinite;
+        }
+        button {
+            background: #ff4081;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            cursor: pointer;
             margin-top: 20px;
-            font-size: 16px;
-            color: #666;
+        }
+        button:hover {
+            background: #f50057;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
         }
     </style>
 </head>
 <body>
-
-<div class="container">
-    <img src="https://i.imgur.com/9QE7Z2T.png" class="cute-img" alt="Teddy Bear">
-    <img src="https://i.imgur.com/rpB3rGL.png" class="cute-img" alt="Candy">
-    <img src="https://i.imgur.com/4q2pBaJ.png" class="cute-img" alt="Rabbit">
-
-    <h1>You're Invited!</h1>
-    <h2>Menyaazhini.M’s 1st Birthday</h2>
-
-    <div class="divider"></div>
-
-    <p class="details">
-        🎉 Join us in celebrating the first magical year of our little one! <br><br>
-        <b>Birthday Girl:</b> Menyaazhini.M <br>
-        <b>Date of Birth:</b> 09‑01‑2023 <br><br>
-        <b>Venue:</b> Home 🏠<br>
-    </p>
-
-    <div class="divider"></div>
-
-    <img src="https://i.imgur.com/UWD2QyK.png" class="cute-img" alt="Small Candy">
-    <img src="https://i.imgur.com/0FzFTRT.png" class="cute-img" alt="Rabbit">
-
-    <p class="footer">
-        We can't wait to celebrate this special milestone with you! 💖
-    </p>
-</div>
-
+    <div class="card">
+        <p class="emoji">🎈 🎉 🎂 🎈</p>
+        <h1>You're Invited!</h1>
+        <h2>Pranitha's Birthday Celebration</h2>
+        
+        <div class="details">
+            📅 <strong>Date:</strong> 15th April 2026<br>
+            ⏰ <strong>Time:</strong> 6:00 PM onwards<br>
+            📍 <strong>Venue:</strong> Your Home / [Your Location]<br><br>
+            <strong>Let's make this day unforgettable! 🎁</strong>
+        </div>
+        
+        <p>RSVP by 10th April<br>
+        Call / WhatsApp: +91-XXXXXXXXXX</p>
+        
+        <button onclick="alert('🎉 Thank you! See you at the party!')">Yes, I'll be there! 🎉</button>
+    </div>
 </body>
 </html>
-``
