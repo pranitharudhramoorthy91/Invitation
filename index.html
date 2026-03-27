@@ -3,148 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎉 Pranitha's Birthday Invitation 🎂</title>
+    <title>🏡 Moni Illam Housewarming Invitation</title>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                        url('https://source.unsplash.com/random/1600x900/?birthday,party') center/cover no-repeat fixed;
-            color: white;
+            background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), 
+                        url('https://source.unsplash.com/random/1600x900/?housewarming,home') center/cover no-repeat fixed;
+            color: #fff;
             text-align: center;
             min-height: 100vh;
-            overflow-x: hidden;
+            padding: 20px;
         }
         .container {
-            max-width: 700px;
-            margin: 40px auto;
-            padding: 40px 20px;
-            background: rgba(255, 255, 255, 0.15);
+            max-width: 720px;
+            margin: 30px auto;
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(12px);
             border-radius: 25px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-        }
-        .header {
-            margin-bottom: 30px;
+            padding: 40px 25px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
         }
         h1 {
-            font-size: 3.8rem;
-            animation: bounce 2.5s infinite;
-            text-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            font-size: 3.2rem;
+            margin-bottom: 10px;
+            animation: bounce 3s infinite;
         }
-        .subtitle {
-            font-size: 2rem;
-            margin: 15px 0;
-            animation: slideIn 2s ease-out forwards;
-            opacity: 0;
+        .welcome {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-in;
         }
-        .details {
-            font-size: 1.55rem;
-            line-height: 2;
-            margin: 35px 0;
+        .section {
+            margin: 45px 0;
             animation: fadeIn 2.5s ease-in forwards;
             opacity: 0;
         }
+        h2 {
+            font-size: 1.9rem;
+            margin-bottom: 18px;
+            color: #ffeb3b;
+        }
+        .details {
+            font-size: 1.45rem;
+            line-height: 2.1;
+        }
         .emoji {
-            font-size: 4.5rem;
-            margin-bottom: 20px;
+            font-size: 4rem;
+            display: block;
+            margin-bottom: 15px;
             animation: float 3s ease-in-out infinite;
         }
         button {
             background: #ff4081;
             color: white;
             border: none;
-            padding: 18px 45px;
-            font-size: 1.4rem;
+            padding: 16px 40px;
+            font-size: 1.35rem;
             border-radius: 50px;
             cursor: pointer;
-            margin: 20px 0;
-            box-shadow: 0 8px 20px rgba(255, 64, 129, 0.4);
-            transition: all 0.4s;
+            margin: 25px 0;
+            box-shadow: 0 8px 25px rgba(255,64,129,0.5);
+            transition: 0.4s;
         }
         button:hover {
-            transform: scale(1.12);
+            transform: scale(1.1);
             background: #f50057;
         }
-        .rsvp {
-            margin-top: 30px;
-            font-size: 1.3rem;
+        .gallery {
+            font-size: 3rem;
+            margin: 20px 0;
+        }
+        .traffic {
+            font-style: italic;
+            color: #ffeb3b;
+            margin-top: 15px;
         }
 
-        /* Animations */
         @keyframes bounce {
             0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-        }
-        @keyframes slideIn {
-            from { transform: translateX(-80px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            50% { transform: translateY(-12px); }
         }
         @keyframes float {
             0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-15px); }
+            50% { transform: translateY(-18px); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <p class="emoji">🎈 🎉 🎂 🎁 🎈</p>
-            <h1>You're Invited!</h1>
-            <p class="subtitle">Birthday Celebration</p>
+        <h1>🏡 Housewarming Invitation</h1>
+        <p class="welcome">You're Invited to Our New House!</p>
+
+        <div class="section">
+            <span class="emoji">🏠</span>
+            <h1>Sai Illam</h1>
         </div>
 
-        <div class="details">
-            📅 <strong>Date:</strong> 15 April 2026<br>
-            ⏰ <strong>Time:</strong> 6:00 PM onwards<br>
-            📍 <strong>Venue:</strong> [Your Venue / Home Address Here]<br><br>
-            <strong>Come, celebrate, enjoy delicious food & create beautiful memories with us! 💖</strong>
+        <div class="section">
+            <h2>🎉 Countdown to the Celebration!</h2>
+            <p class="details">The celebration has begun! Welcome!</p>
         </div>
 
-        <button onclick="launchConfetti()">Yes, I'll Be There! 🎉</button>
+        <div class="section">
+            <h2>🗓️ Ceremony Details</h2>
+            <div class="details">
+                <strong>Date:</strong> Sunday, March 8, 2026<br>
+                <strong>Housewarming Time:</strong> 04:30 AM<br>
+                <strong>Breakfast Club House Party Hall:</strong> 07:30 AM - 10:00 AM<br><br>
+                <strong>Invited By:</strong><br>
+                Santhosh I.T. & Ponkirthiga K. & Krishvanth S.
+            </div>
+        </div>
 
-        <div class="rsvp">
-            Please RSVP by 10th April<br>
-            Call / WhatsApp: +91-XXXXXXXXXX
+        <div class="section">
+            <h2>📸 Our New Home Gallery</h2>
+            <div class="gallery">❮ &nbsp;&nbsp; 📷 &nbsp;&nbsp; ❯</div>
+            <p>(Images will be added soon)</p>
+        </div>
+
+        <div class="section">
+            <h2>📍 Find Our Home</h2>
+            <div class="details">
+                <strong>"Moni Illam"</strong><br>
+                Flat PG06, Block 4,<br>
+                Casagrand Utopia,<br>
+                Manapakkam, Chennai - 600125,<br>
+                Tamil Nadu.
+            </div>
+            <p class="traffic">
+                *Heads up: Traffic on Manapakkam Main Rd. is heavy, so please plan to arrive early.*
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>✉️ Formal Invitation</h2>
+            <p class="details">A beautifully designed invitation for you to keep.</p>
+            <button onclick="launchConfetti()">I'm Coming! 🎉</button>
         </div>
     </div>
 
     <script>
         function launchConfetti() {
             confetti({
-                particleCount: 200,
-                spread: 80,
+                particleCount: 180,
+                spread: 90,
                 origin: { y: 0.6 }
             });
-            setTimeout(() => {
-                confetti({
-                    particleCount: 120,
-                    angle: 60,
-                    spread: 70,
-                    origin: { x: 0.1 }
-                });
-            }, 250);
-            alert("🎉 Thank you! Can't wait to celebrate with you!");
+            alert("🎉 Thank you! We can't wait to welcome you to Moni Illam!");
         }
 
-        // Light confetti when page loads
+        // Gentle confetti on load
         window.onload = () => {
             setTimeout(() => {
-                confetti({
-                    particleCount: 80,
-                    spread: 100,
-                    origin: { y: 0.8 }
-                });
-            }, 1200);
+                confetti({ particleCount: 60, spread: 70, origin: { y: 0.8 } });
+            }, 1000);
         };
     </script>
 </body>
